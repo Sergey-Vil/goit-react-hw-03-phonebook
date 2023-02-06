@@ -1,0 +1,9 @@
+.phonebook {
+  border: 5px solid black;
+  background: aqua;
+}
+h2 {
+  font-size: 32px;
+  margin: 15px auto;
+  text-align: center;
+}

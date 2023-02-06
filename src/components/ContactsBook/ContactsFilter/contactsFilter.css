@@ -1,0 +1,13 @@
+div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+p {
+  font-size: 16px;
+}
+input {
+  border: 2px solid rgb(115, 99, 155);
+  border-radius: 6px;
+}
