@@ -15,6 +15,17 @@ export class ContactsBook extends Component {
     ],
     filter: '',
   };
+  componentDidMount() {
+    const savedContacts = JSON.parse(localStorage.getItem('contacts'));
+    if (savedContacts) {
+      this.setState({ contacts: savedContacts });
+    }
+  }
+  componentDidUpdate(_, prevState) {
+    if (prevState.contacts.length !== this.state.length) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
   addContacts = data => {
     const newContact = { ...data, id: nanoid() };
 

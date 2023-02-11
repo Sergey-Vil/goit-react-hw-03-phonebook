@@ -19,7 +19,7 @@ export default function ContactsList({ contacts, deleteContact }) {
   ));
   return <ul>{elements}</ul>;
 }
-ContactsList.propType = {
+ContactsList.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
